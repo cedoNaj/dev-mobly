@@ -1,0 +1,27 @@
+{
+  "name": "mobygo",
+  "version": "1.0.0",
+  "description": "test theme for arthaus.mk.",
+  "main": "index.php",
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "author": "Cedo Najdeski",
+  "license": "GPL-3.0",
+  "homepage": "http://http://kreatika.mk/",
+  "devDependencies": {
+    "autoprefixer": "^6.7.7",
+    "browser-sync": "^2.23.6",
+    "cors": "^2.8.4",
+    "gulp": "^3.9.1",
+    "gulp-connect": "^5.5.0",
+    "gulp-image": "^2.10.1",
+    "gulp-jshint": "^2.1.0",
+    "gulp-newer": "^1.4.0",
+    "gulp-postcss": "^6.4.0",
+    "gulp-sass": "^2.3.2",
+    "gulp-sourcemaps": "^2.6.4",
+    "jshint": "^2.9.4"
+  }
+}

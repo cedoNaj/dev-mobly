@@ -1,0 +1,220 @@
+.site-header {
+	position: relative;
+	padding: 1em;
+	font-family: $font__head;
+	color: #fff;
+	background-color: $color__header__mobly;
+	min-height:62px;
+	@media screen and (min-width: $media__query__small) {
+		padding: 1em 2em;
+	}
+}
+
+ .custom-logo-link .custom-logo{
+ 	margin-top:5px;
+ }
+.site-title {
+	margin: 0;
+	padding: 0;
+	font-size: 1.6em;
+	font-weight: 900;
+	line-height: 1em;
+	
+	a {
+		color: white;
+		text-decoration: none;
+		
+		&:hover,
+		&:focus {
+			text-decoration: none;
+		}
+	}
+}
+
+
+.lang-drop .flag{
+	width:20px;
+	height:20px;
+	background: url(img/belgium_flag.png) no-repeat 50% 50%;
+	background-size: 20px 20px;
+	border-radius: 40%;
+}
+.shopping-bag{
+	width:180px;
+	height:40px;
+	background:$orange_mobly;
+	border-radius: 50px;
+}
+
+@media screen and (min-width: $query__tablet+1px){
+	.flex-header-content{
+		max-width:$media__query__medium;
+		margin-left:auto;
+		margin-right: auto;
+		display: flex;
+		justify-content:space-between;
+		 display: -webkit-flex; /* Safari */
+         -webkit-justify-content: space-around; /* Safari 6.1+ */
+    }
+    .lang-drop{
+    	display: flex;
+		justify-content:flex-end;
+		 display: -webkit-flex; /* Safari */
+         -webkit-justify-content: flex-end; /* Safari 6.1+ */
+    }
+	.site-branding{
+		width:70%;
+	}
+    .lang-drop{
+        width:10%;
+    }
+    .shopping-bag{
+    	width:20%;
+    	max-width: 180px;
+    }
+
+    .flag,.lang-arrow-screen{
+    	margin-top:.6em;
+    	margin-right:1em;
+    }
+    .lang-arrow-screen{
+    	a{
+    		
+    	   color:$link_white_mobly;	
+    	}
+    }
+    .lang-arrow-mobile{
+    	display:none;
+    }
+    .shopping-icon{
+    	margin:.6em 0 0 2em;
+    	color:$link_white_mobly;
+    	width:25px;
+    	height:25px;
+    	@include background('img/shopping-cart.png');
+    }
+
+}
+
+
+@media screen and (max-width: $query__mobile) {
+   .flex-header-content{
+		max-width:$media__query__medium;
+		margin-left:auto;
+		margin-right: auto;
+		display: flex;
+		justify-content:space-between;
+		 display: -webkit-flex; /* Safari */
+         -webkit-justify-content: space-around; /* Safari 6.1+ */
+    }
+   
+   .lang-drop{
+    	display: flex;
+		justify-content:flex-end;
+		 display: -webkit-flex; /* Safari */
+         -webkit-justify-content: flex-end; /* Safari 6.1+ */
+    }
+	.site-branding{
+		width:30%;
+	}
+    .lang-drop{
+        width:30%;
+    }
+    .shopping-bag{
+    	width:40%;
+    	max-width: 180px;
+    }
+
+    .flag,.lang-arrow-mobile{
+    	margin-top:.6em;
+    	margin-right:1em;
+    }
+    .lang-arrow-mobile{
+    	a{
+    		
+    	   color:$link_white_mobly;	
+    	}
+    }
+    .lang-arrow-screen{
+    	display:none;
+    }
+    .lang-drop .flag{
+	width:30px;
+	height:30px;
+	background: url(img/belgium_flag.png) no-repeat 50% 50%;
+	background-size: 30px 30px;
+	border-radius: 50%;
+	margin-top:.29em;
+}
+   .lang-arrow{
+    	margin-top:.6em;
+    	margin-right:1em;
+    }
+    .shopping-icon{
+    	margin:.6em 0 0 2em;
+    	color:$link_white_mobly;
+    	width:25px;
+    	height:25px;
+    	@include background('img/shopping-cart.png');
+
+    }
+
+}
+
+@media only screen and (max-width: $query__tablet) and (min-width: $query__mobile+1px) {
+	.flex-header-content{
+		max-width:$media__query__medium;
+		margin-left:auto;
+		margin-right: auto;
+		display: flex;
+		justify-content:space-between;
+		 display: -webkit-flex; /* Safari */
+         -webkit-justify-content: space-around; /* Safari 6.1+ */
+    }
+   
+   .lang-drop{
+    	display: flex;
+		justify-content:flex-end;
+		 display: -webkit-flex; /* Safari */
+         -webkit-justify-content: flex-end; /* Safari 6.1+ */
+    }
+	.site-branding{
+		width:30%;
+	}
+    .lang-drop{
+        width:30%;
+    }
+    .shopping-bag{
+    	width:40%;
+    	max-width: 180px;
+    }
+
+    .flag,.lang-arrow-mobile{
+    	margin-top:.6em;
+    	margin-right:1em;
+    }
+    .lang-arrow-mobile{
+    	a{
+    		
+    	   color:$link_white_mobly;	
+    	}
+    }
+    .lang-arrow-screen{
+      display: none;
+    }
+     .lang-drop .flag{
+	width:30px;
+	height:30px;
+	background: url(img/belgium_flag.png) no-repeat 50% 50%;
+	background-size: 30px 30px;
+	border-radius: 50%;
+	margin-top:.5em;
+}
+    .shopping-icon{
+    	margin:.6em 0 0 2em;
+    	color:$link_white_mobly;
+    	width:25px;
+    	height:25px;
+    	@include background('img/shopping-cart.png');
+    }
+}

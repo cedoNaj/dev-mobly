@@ -1,0 +1,20 @@
+.site-footer{
+	position:relative;
+	padding:1em;
+	font-family:$font__head;
+    height:61px;
+    background-color: $footer__bg;
+      .site-info{
+      	color:$link_white_mobly;
+        text-align:center;
+      		a{
+      			color:$link_white_mobly;
+      			text-decoration: none;
+      			transition:all .3s linear;
+      				&:hover{
+      					color: darken($link_white_mobly, 20%);
+      				}
+      		}
+      }
+
+}

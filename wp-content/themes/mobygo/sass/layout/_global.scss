@@ -1,0 +1,11 @@
+.site-content{
+	padding:1em;
+	background-color: $blog__bg;
+    @media screen and (min-width: $media__query__small){
+       padding:2em;
+    }
+
+}
+.post-grid{
+    		background-color:$blog__bg!important;
+    	}
